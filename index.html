@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café del Valle - Bootstrap 5.3.8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link href="css/my-custom-styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="#inicio" class="my-2 my-lg-0 me-lg-auto text-white text-decoration-none fs-4 fw-bold">
+                        Café del Valle
+                    </a>
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0">
+                        <li><a href="#inicio" class="nav-link text-secondary">Inicio</a></li>
+                        <li><a href="#productos" class="nav-link text-white">Productos</a></li>
+                        <li><a href="#comparar" class="nav-link text-white">Comparar</a></li>
+                        <li><a href="#contacto" class="nav-link text-white">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="px-3 py-2 border-bottom mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+                    <input type="search" class="form-control" placeholder="Buscar..." aria-label="Buscar">
+                </form>
+                <div class="text-end">
+                    <button type="button" class="btn btn-light text-dark me-2">Ingresar</button>
+                    <button type="button" class="btn btn-cafe">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container my-5" id="inicio">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Café de especialidad, tostado en pequeños lotes</h1>
+                    <p class="lead">Trabajamos directamente con productores de la región para que cada taza tenga el
+                        mejor sabor, desde el grano hasta tu mesa.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                        <a href="#productos" class="btn btn-cafe btn-lg px-4 me-md-2 fw-bold">Ver productos</a>
+                        <a href="#contacto" class="btn btn-outline-secondary btn-lg px-4">Contacto</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3 img-fluid" src="img/hero.svg" alt="Café de especialidad" width="720">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto">
+            <h2 id="productos" class="display-6 text-center mb-4">Nuestros productos</h2>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Café en grano</h4>
+                        </div>
+                        <img src="img/grano.svg" class="card-img-top" alt="Café en grano">
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">L 280<small
+                                    class="text-body-secondary fw-light"> / 500 g</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Tueste medio</li>
+                                <li>Notas a chocolate</li>
+                                <li>Bolsa de 500 g</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-cafe">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Café molido</h4>
+                        </div>
+                        <img src="img/molido.svg" class="card-img-top" alt="Café molido">
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">L 150<small
+                                    class="text-body-secondary fw-light"> / 250 g</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Molienda para filtro</li>
+                                <li>Tueste medio</li>
+                                <li>Bolsa de 250 g</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-cafe">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-cafe">
+                        <div class="card-header py-3 text-bg-cafe border-cafe">
+                            <h4 class="my-0 fw-normal">Cápsulas</h4>
+                        </div>
+                        <img src="img/capsulas.svg" class="card-img-top" alt="Cápsulas de café">
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">L 120<small
+                                    class="text-body-secondary fw-light"> / caja</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Intensidad media</li>
+                                <li>Caja de 10 unidades</li>
+                                <li>Compatibles con máquinas comunes</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-cafe">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="comparar" class="display-6 text-center mb-4">Compará productos</h2>
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">En grano</th>
+                            <th style="width: 22%;">Molido</th>
+                            <th style="width: 22%;">Cápsulas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Listo para preparar</th>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Necesita molino</th>
+                            <td>✓</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Tueste medio</th>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Envío en 48 horas</th>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Requiere máquina de cápsulas</th>
+                            <td></td>
+                            <td></td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacto" class="container row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 my-5 mx-auto border-top">
+        <div class="col mb-3">
+            <h5>Café del Valle</h5>
+            <p class="text-body-secondary">© 2026</p>
+        </div>
+        <div class="col mb-3">
+            <h5>Secciones</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#inicio" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                <li class="nav-item mb-2"><a href="#productos" class="nav-link p-0 text-body-secondary">Productos</a></li>
+                <li class="nav-item mb-2"><a href="#comparar" class="nav-link p-0 text-body-secondary">Comparar</a></li>
+            </ul>
+        </div>
+        <div class="col mb-3">
+            <h5>Dónde estamos</h5>
+            <address class="text-body-secondary">
+                Calle Principal 123<br>
+                Trujillo, Colón
+            </address>
+        </div>
+        <div class="col mb-3">
+            <h5>Contacto</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2 text-body-secondary">Tel: +504 0000-0000</li>
+                <li class="nav-item mb-2 text-body-secondary">Lunes a sábado, 8 a 18 h</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

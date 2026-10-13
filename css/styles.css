@@ -1,0 +1,32 @@
+:root {
+  --cafe: #6b3e1f;
+  --cafe-oscuro: #4d2b14;
+}
+.btn-cafe {
+  background-color: var(--cafe);
+  border-color: var(--cafe);
+  color: #fff;
+}
+.btn-cafe:hover {
+  background-color: var(--cafe-oscuro);
+  border-color: var(--cafe-oscuro);
+  color: #fff;
+}
+.btn-outline-cafe {
+  border-color: var(--cafe);
+  color: var(--cafe);
+}
+.btn-outline-cafe:hover {
+  background-color: var(--cafe);
+  color: #fff;
+}
+.text-bg-cafe {
+  background-color: var(--cafe);
+  color: #fff;
+}
+.border-cafe {
+  border-color: var(--cafe) !important;
+}
+html {
+  scroll-behavior: smooth;
+}
